@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02: Evento de clique e estilo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Estilos iniciais para a div */
+        #forma {
+            width: 200px;
+            height: 200px;
+            background-color: yellow; /* Cor de fundo à escolha */
+            border-radius: 50%; /* Formato circular inicial */
+            margin-bottom: 20px;
+            transition: border-radius 0.3s ease; /* Adiciona uma transição suave */
+        }
+        #btn-forma {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Div com id="forma" -->
+    <div id="forma"></div>
+
+    <!-- Botão com id="btn-forma" e chamada à função mudarForma() -->
+    <button id="btn-forma" onclick="mudarForma()">Mudar forma</button>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="questao02.js"></script>
+</body>
+</html>

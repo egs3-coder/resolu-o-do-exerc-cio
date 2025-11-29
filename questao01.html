@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01: Manipulação do DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #txt-titulo {
+            padding: 8px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemento <h1> com id="titulo", inicialmente vazio -->
+    <h1 id="titulo"></h1>
+
+    <!-- Campo de entrada de texto com id="txt-titulo" -->
+    <input type="text" id="txt-titulo">
+
+    <!-- Botão que chama a função inserirTitulo() ao ser clicado -->
+    <button onclick="inserirTitulo()">Clique aqui</button>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="questao01.js"></script>
+</body>
+</html>
